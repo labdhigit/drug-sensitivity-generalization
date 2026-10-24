@@ -1,8 +1,23 @@
 # Predicting Anti-Cancer Drug Sensitivity from Baseline Gene Expression: Cell-Line- and Drug-Wise Generalization Testing
 
-**Author:** Labdhi Kumar Jain (23BCB0147)
-**Role:** [WRITE YOUR ROLE AND RESPONSIBILITIES HERE]
-**Guide feedback:** Jeevan P Abraham
+**Author:** Labdhi Kumar Jain (23BCB0147), Jeevan P Abraham (24BCB0083)
+**Role:** 
+
+Labdhi Kumar Jain: data and evaluation
+
+Literature review (GDSC, CCLE, leakage in drug-response prediction)
+Sourcing GDSC and CCLE/DepMap data and harmonising cell-line IDs
+Building drug features (Morgan fingerprints from SMILES)
+Designing the three evaluation regimes and nested cross-validation
+Writing the Introduction, Methods and Data Availability sections
+
+Jeevan P Abraham: modelling and interpretation
+
+Implementing and tuning the models (ElasticNet/Ridge, Random Forest, XGBoost)
+Running experiments across regimes and seeds, with confidence intervals
+SHAP analysis and checking genes against known markers (ERBB2, EGFR)
+Writing the Results and Discussion and Conclusion sections
+
 
 ## What this project does
 Predicts ln(IC50) drug response of a cancer cell line from its baseline gene expression plus drug
