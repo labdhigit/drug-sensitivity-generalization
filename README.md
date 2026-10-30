@@ -37,9 +37,10 @@ No real results are reported in this repository yet.
 
 ## Run
 ```
-pip install -r requirements.txt
-python src/pipeline.py --synthetic          # smoke test only, numbers are meaningless
-python src/pipeline.py --data data          # real data, see data/README.md
+   pip install numpy pandas scikit-learn xgboost
+   mkdir results
+   python pipeline.py --synthetic --k 100 --seeds 2    # smoke test only, numbers are meaningless
+   python pipeline.py --data data                      # real data, see Data section
 ```
 
 ## Data
